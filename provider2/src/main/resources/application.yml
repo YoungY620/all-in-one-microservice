@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: provider
+  config:
+    import: optional:configserver:http://localhost:7755/
+  cloud:
+    config:
+      name: allinone-provider2
+      label: master
+      profile: test
+      uri: http://localhost:7755/
