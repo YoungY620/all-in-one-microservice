@@ -6,7 +6,7 @@ This project is a exercise of Spring Cloud, which is about e-shop order manageme
 
 ## Usage
 
-### Skywalking serice observation
+### Skywalking sevice observation
 
 [Details about Skywalking java agent configure](http://skywalking.apache.org/docs/main/v8.6.0/en/setup/service-agent/java-agent/readme/)
 
@@ -35,7 +35,7 @@ make run-register
 
 the other instances are similar, like `run-consumer` `run-provider` `run-gateway`.
 
-You can also build specific one by running `run build-*` to refresh its target.
+You can also build specific one by running `make build-*` to refresh its target.
 
 To clean targets and logs:
 
