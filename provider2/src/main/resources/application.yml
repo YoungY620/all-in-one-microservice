@@ -1,11 +1,35 @@
+# spring:
+#   application:
+#     name: provider
+#   config:
+#     import: optional:configserver:http://localhost:7755/
+#   cloud:
+#     config:
+#       name: allinone-provider2
+#       label: master
+#       profile: test
+#       uri: http://localhost:7755/
+
 spring:
   application:
     name: provider
-  config:
-    import: optional:configserver:http://localhost:7755/
-  cloud:
-    config:
-      name: allinone-provider2
-      label: master
-      profile: test
-      uri: http://localhost:7755/
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/e_shop?characterEncoding=utf-8&serverTimezone=GMT%2B8
+    username: root
+    password: YangYouCai4YangYi!
+server:
+  port: 8002
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7002/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: user-provider2
+info.app.name: provider2
+info.company.name: cn
+info.author.name: yy
+logging:
+  level:
+    root: INFO

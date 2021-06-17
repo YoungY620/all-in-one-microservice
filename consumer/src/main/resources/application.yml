@@ -6,5 +6,5 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka2.com:7002/eureka/, http://eureka1.com:7001/eureka/
-#    register-with-eureka: false
+      defaultZone: http://localhost:7002/eureka/
+    register-with-eureka: false

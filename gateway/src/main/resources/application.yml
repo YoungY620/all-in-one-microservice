@@ -6,7 +6,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka2.com:7002/eureka/,http://eureka1.com:7001/eureka/
+      defaultZone: http://localhost:7002/eureka/,http://eureka1.com:7001/eureka/
   instance:
     instance-id: gateway.com
     # 访问路径可以显示IP地址
