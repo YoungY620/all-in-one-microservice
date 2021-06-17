@@ -1,8 +1,6 @@
 VERSION := 0.0.1-SNAPSHOT
 TARGET := target
 SKYWALKING_AGENT_PATH := agent/skywalking-agent.jar
-# ADD_AGENT_OPT := \
-# 	# -javaagent:$(SKYWALKING_AGENT_PATH) 
 
 build: build-consumer build-register build-config \
 	build-gateway build-provider
