@@ -6,11 +6,11 @@ This project is a exercise of Spring Cloud, which is about e-shop order manageme
 
 ## Usage
 
-### Skywalking serice observation
+### Skywalking sevice observation
 
 [Details about Skywalking java agent configure](http://skywalking.apache.org/docs/main/v8.6.0/en/setup/service-agent/java-agent/readme/)
 
-The agents are in `./<module folder>/agent/` , you can config your own Skywalking OAP host and port.
+The agents are in `./<module folder>/agent/` , you can config your own Skywalking host and port.
 
 You can also change the `Makefile` to choose your own java agent.
 
@@ -35,7 +35,7 @@ make run-register
 
 the other instances are similar, like `run-consumer` `run-provider` `run-gateway`.
 
-You can also build specific one by running `run build-*` to refresh its target.
+You can also build specific one by running `make build-*` to refresh its target.
 
 To clean targets and logs:
 
