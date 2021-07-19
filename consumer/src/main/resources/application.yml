@@ -7,4 +7,4 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:7002/eureka/
-    register-with-eureka: false
+#    register-with-eureka: false

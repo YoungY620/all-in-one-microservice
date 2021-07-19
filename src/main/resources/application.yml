@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: https://gitee.com/yuzhouwudiyyc/springcloud-config.git
+          uri: https://gitee.com/YoungY620/springcloud-config.git
       label: master
 server:
   port: 7755

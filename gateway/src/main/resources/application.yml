@@ -1,0 +1,24 @@
+server:
+  port: 6001
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      routes:
+        - id: pro-route
+          uri: lb://provider/
+          predicates:
+            - Path=/e-shop/**
+          filters:
+            - AddResponseHeader=My-Response-Key, Hahahahahaha
+        - id: cus-route
+          uri: lb://feign
+          predicates:
+            - Path=/consumer/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7002/eureka/
+
